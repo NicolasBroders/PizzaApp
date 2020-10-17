@@ -5,15 +5,33 @@
              x:Class="PizzaApp.MainPage">
 
     <NavigationPage.TitleView>
-        <StackLayout HorizontalOptions="Center" 
-                    Margin="{OnPlatform iOS='0,0,25,0', Android='0,0,20,0', Default=0}"
-                    Orientation="Horizontal">
+        <Grid ColumnSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="40" />
+            </Grid.ColumnDefinitions>
 
-            <Image Source="pizza_logo.png" HeightRequest="40" />
-            <Label Text="Pizzas" 
+            <StackLayout Grid.Row="0"
+                   Grid.Column="1"
+                         Orientation="Horizontal"
+                         HorizontalOptions="Center">
+                <Image
+                   Source="pizza_logo.png" HeightRequest="40" />
+                <Label
+                Text="Pizzas" 
                 FontAttributes="Bold"
                 TextColor="White" VerticalOptions="Center" />
-        </StackLayout>
+            </StackLayout>
+
+            <ImageButton Grid.Row="0"
+                         Grid.Column="2"
+                         Margin="0,0,5,0"
+                         x:Name="sortImage"  Clicked="SortButtonClicked" Source="sort_none.png" WidthRequest="40" BackgroundColor="Transparent"/>
+        </Grid>
 
 
     </NavigationPage.TitleView>

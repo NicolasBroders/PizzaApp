@@ -139,4 +139,22 @@
   <ItemGroup>
     <BundleResource Include="pizza_logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="sort_fav.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="sort_nom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="sort_none.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="sort_prix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="star1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="star2.png" />
+  </ItemGroup>
 </Project>
